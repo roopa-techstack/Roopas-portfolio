@@ -15,100 +15,23 @@
   box-sizing: border-box;
 }
 
-
 :root {
-  /* 🌸 Pink Theme */
-  --color1: #ff69b4;   /* main pink */
-  --color2: #ff85c1;   /* lighter pink */
-  --color3: #ff9ecd;   /* soft pink */
-  --color4: #fff;      /* white background */
-  --color5: #ff69b4;   /* pink for headings */
-  --color6: #fff;      /* white */
-
+  --color1: #0d1321;
+  --color4: #1d2d44;
+  --color3: #3e5c76;
+  --color2: #748cab;
+  --color5: #f0ebd8;
+  --color6: #1e293b;
   --font1: "Montserrat", sans-serif;
   --font2: "Trirong", serif;
   --font3: "Merriweather", serif;
-
   --gradient: radial-gradient(
     circle at top,
+    var(--color1),
     var(--color4),
-    var(--color3),
     var(--color2)
   );
 }
-
-/* Global */
-body {
-  background: var(--color4); /* white */
-  color: var(--color1);      /* pink text */
-}
-
-/* Headings */
-h1, h2, h3, h4 {
-  color: var(--color1);
-}
-
-/* Navbar */
-.header {
-  background: var(--color4);
-  box-shadow: inset 0px -1px var(--color2);
-}
-.menu2 li {
-  color: var(--color1);
-}
-.menu2 li:hover::before,
-.menu2 li:hover::after {
-  border-color: var(--color1);
-}
-
-/* Work Section */
-section .container {
-  background: var(--color4);
-  color: var(--color1);
-}
-
-.project-content h1 {
-  color: var(--color1);
-}
-.project-content p {
-  color: var(--color1);
-}
-.project-links .tags {
-  border: 2px solid var(--color1);
-  color: var(--color1);
-}
-.project-links .tags:hover {
-  background: linear-gradient(to top right, var(--color2), var(--color3));
-  color: #fff;
-}
-
-/* Footer */
-.footer-container {
-  background: var(--color4);
-  color: var(--color1);
-}
-.footer-icons a i {
-  color: var(--color1);
-}
-.footer-icons a i:hover {
-  color: var(--color3);
-}
-
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 32px; /* tablets */
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 20px; /* phones */
-  }
-}
-
-
-
 
 html {
   scroll-behavior: smooth;
